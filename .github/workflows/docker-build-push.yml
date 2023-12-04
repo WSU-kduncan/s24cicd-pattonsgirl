@@ -44,4 +44,5 @@ jobs:
           context: .
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          push: true
             #tags: wsukduncan/f23-catsite:latest
