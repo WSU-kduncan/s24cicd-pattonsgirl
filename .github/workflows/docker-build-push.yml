@@ -1,14 +1,29 @@
 name: build-push
 
 on:
-  push:
-    branches:
-      - 'main'
+  tags:
+      - "v*.*.*"
 
 jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
+      - 
+        name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          # list of Docker images to use as base name for tags
+          images: |
+            wsukduncan/f23-catsite
+          # generate Docker tags based on the following events/attributes
+          tags: |
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}
+            type=sha
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -25,5 +40,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v5
         with:
-          push: true
-          tags: wsukduncan/f23-catsite:latest
+          context: .
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+            #tags: wsukduncan/f23-catsite:latest
