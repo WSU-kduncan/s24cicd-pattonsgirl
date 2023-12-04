@@ -1,7 +1,8 @@
 name: build-push
 
 on:
-  tags:
+  push:
+    tags:
       - "v*.*.*"
 
 jobs:
