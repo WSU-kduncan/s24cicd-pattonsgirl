@@ -4,7 +4,7 @@ import random
 
 app = Flask(__name__)
 
-print("Hello world.  This to make a change. This is a change to make a patch.  This won't show unless running latest build.")
+print("Hello world.  This to make a change. This is a change to make a patch.  This won't show unless running latest build.  Adding more words")
 
 # list of cat images
 images = [
