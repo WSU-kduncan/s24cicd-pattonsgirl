@@ -21,6 +21,8 @@ images = [
     "https://firebasestorage.googleapis.com/v0/b/docker-curriculum.appspot.com/o/catnip%2F7.gif?alt=media&token=9e449089-9f94-4002-a92a-3e44c6bd18a9",
     "https://firebasestorage.googleapis.com/v0/b/docker-curriculum.appspot.com/o/catnip%2F8.gif?alt=media&token=80a48714-7aaa-45fa-a36b-a7653dc3292b",
     "https://firebasestorage.googleapis.com/v0/b/docker-curriculum.appspot.com/o/catnip%2F9.gif?alt=media&token=a57a1c71-a8af-4170-8fee-bfe11809f0b3",
+    "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExajJ0Y3VxMTBqZnRjMGgxOXpsOTdiczRweTU1aXd2d3E1eTBzdTU1OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cjbxJXhNXDMjhlr1S8/giphy.gif",
+    "https://i.imgur.com/mJRa4GD.gif"
 ]
 
 
